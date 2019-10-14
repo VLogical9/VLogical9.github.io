@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to KitchenKings</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\Admin\Desktop\css\style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+<div style="background-color: #dddd8e;"><center><img src="C:\Users\Admin\Desktop\css\logo.png"></center></div>
+<div class="navbar">
+            <a href="C:\Users\Admin\Desktop\css\index.html">Home</a>
+            <a href="C:\Users\Admin\Desktop\css\services.html">Services</a>
+            <a href="C:\Users\Admin\Desktop\css\aboutus.html">About Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Contact Us 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="mailto:info@kitchenkings.com">Email</a>
+                <a href="Tel: +917290850752">Phone</a>
+                <a href="C:\Users\Admin\Desktop\css\contactus.html">Feedbacks/Complaints</a>
+              </div>
+            </div> 
+          </div>
+
+
+
+
+<center><p>Welcome To Kitchen Kings.<br>
+We at Kitchen Kings belive when one should get the best and the tastiest food.<br> We at our resturant try to serve the best quality food at best prices.<br></p>
+<p>We offer a variety of services to help us cater the demands of the beloved customers.<br>
+  
+  
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="C:\Users\Admin\Desktop\css\ss1.jpg" style="width:100%; height: 450px;">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="C:\Users\Admin\Desktop\css\ss2.jpg" style="width:100%; height: 450px;">
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="C:\Users\Admin\Desktop\css\ss3.jpg" style="width:100%; height: 450px;">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+Please refer to our <a href="C:\Users\Admin\Desktop\css\services.html"><u>Services page</u></a> to get more Infomation on the Services.</p></center>
+
+
+
+<footer style="background-color: black;"><center><font color="white"> G-105, DLF Mall Of  India, Noida, Uttar Pardesh, 201301<br>Tel: 0120-4112282, +91-7290850752<br>
+Email: info@kitchenkings.com<br><br>
+<a href="https://twitter.com/KitchenKings" target="_blank" class="fa fa-twitter" style="font-size: 2em;"></a>
+<a href="https://www.linkedin.com/company/KitchenKings/" target="_blank" class="fa fa-linkedin" style="font-size: 2em;"></a>
+<a href="https://www.instagram.com/KitchenKings/?hl=en" target="_blank" class="fa fa-instagram" style="font-size: 2em;"></a>
+<a href="https://www.facebook.com/pages/category/Website/KitchenKings/about/" target="_blank" class="fa fa-facebook" style="font-size: 2em;"></a>
+<br>
+<br>
+
+<a href="C:\Users\Admin\Desktop\css\t-c.html" target="_blank" style="color: #888888;font-family: arial;font-size: 14px;">Terms and Conditions</a>
+  | 
+<a href="C:\Users\Admin\Desktop\css\Nutritional-Facts.pdf" target="_blank" download="Nutritional-Facts.pdf" style="color: #888888;font-family: arial;font-size: 14px;">Nutrition</a>
+
+
+</font></center></footer>
+
+
+
+</body>
+</html>
